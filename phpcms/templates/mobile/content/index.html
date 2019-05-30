@@ -18,7 +18,41 @@
         </div>
     </div>
 </div>
-<div class="container">
-
+<!-- 选项卡面板 -->
+<div class="container" style="text-align:center;">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#bulletin" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-globe">院内新闻</span></a></li>
+        <li><a href="#rule" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-expand">媒体聚焦</span></a></li>
+        <li><a href="#forum" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-bullhorn">本院公告</span></a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="bulletin">
+            {pc:content action="lists" catid="9" order="listorder DESC" num="4" return="data"}
+                <ul>
+                    {loop $data $r}
+                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                    {/loop}
+                </ul>
+            {/pc}
+        </div>
+        <div class="tab-pane fade" id="rule">
+            {pc:content action="lists" catid="10" order="listorder DESC" num="4" return="data"}
+                <ul>
+                    {loop $data $r}
+                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                    {/loop}
+                </ul>
+            {/pc}
+        </div>
+        <div class="tab-pane fade" id="forum">
+            {pc:content action="lists" catid="11" order="listorder DESC" num="4" return="data"}
+                <ul>
+                    {loop $data $r}
+                    <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                    {/loop}
+                </ul>
+            {/pc}
+        </div>
+    </div>
 </div>
 {template "content", "footer"}
