@@ -48,7 +48,7 @@
             <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=87c7401b54b06223d9c975bd52c97727&action=lists&catid=11&order=listorder+DESC&num=4&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'11','order'=>'listorder DESC','limit'=>'4',));}?>
                 <ul>
                     <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
-                    <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="<?php echo $r['url'];?>"><?php echo str_cut($r[title], '70', '...');?></a><span class="time"><?php echo date('Y-m-d', $r[updatetime]);?></span></li>
+                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="<?php echo $r['url'];?>"><?php echo str_cut($r[title], '70', '...');?></a><span class="time"><?php echo date('Y-m-d', $r[updatetime]);?></span></li>
                     <?php $n++;}unset($n); ?>
                 </ul>
             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>

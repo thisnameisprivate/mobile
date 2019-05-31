@@ -48,7 +48,7 @@
             {pc:content action="lists" catid="11" order="listorder DESC" num="4" return="data"}
                 <ul>
                     {loop $data $r}
-                    <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
                     {/loop}
                 </ul>
             {/pc}
