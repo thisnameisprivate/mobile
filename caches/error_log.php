@@ -68,3 +68,6 @@
 ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>06-02 07:57:37 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
 ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-02 09:29:17 | 2 | Illegal string offset 'updatetime' | caches\caches_template\mobile\content\show.php | 6
+<?php exit;?>06-02 09:29:17 | 2 | date() expects parameter 2 to be long, array given | caches\caches_template\mobile\content\show.php | 6
+<?php exit;?>06-02 09:30:07 | 2 | Illegal string offset 'content' | caches\caches_template\mobile\content\show.php | 8
