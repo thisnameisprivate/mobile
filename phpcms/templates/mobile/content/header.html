@@ -11,10 +11,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="">
 	<style type="text/css">
-		body{ margin:0; padding:0; padding-top:55px; }
-		*{ list-style:none; }
+		html,body{ padding-top:55px; width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; overflow-y:auto; }
+		*{ list-style:none; marign:0; padding:0;}
 		a{ text-decoration: none; }
-		#active1 {}
+		.blockTextLink{ text-align:left; }
+		.active-team{ width:100%; }
+		.active-team div{ float:left; width:18%; margin:0 auto; margin-left:1.5%; height:65%; margin-top:10px; border-radius:5px; max-width:80px; }
+		.active-team div img{ width:100%; height:100%; }
+		.hospital-team{ height:10vh; }
 	</style>
 </head>
 <body>

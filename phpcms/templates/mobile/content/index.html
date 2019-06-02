@@ -1,5 +1,5 @@
 {template "content", "header"}
-<div class="container layui-carousel" id="active1" lay-filter="active2">
+<div class="container layui-carousel" id="active1" lay-filter="active2" style="max-width:600px;">
     <div carousel-item="">
         <div>
             条目1
@@ -27,32 +27,75 @@
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in active" id="bulletin">
-            {pc:content action="lists" catid="9" order="listorder DESC" num="4" return="data"}
+            {pc:content action="lists" catid="9" order="listorder DESC" num="8" return="data"}
                 <ul>
                     {loop $data $r}
-                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                        <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a> <!-- <span class="time">{date('Y-m-d', $r[updatetime])}</span> --></li>
                     {/loop}
                 </ul>
             {/pc}
         </div>
         <div class="tab-pane fade" id="rule">
-            {pc:content action="lists" catid="10" order="listorder DESC" num="4" return="data"}
+            {pc:content action="lists" catid="10" order="listorder DESC" num="8" return="data"}
                 <ul>
                     {loop $data $r}
-                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                        <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a> <!-- <span class="time">{date('Y-m-d', $r[updatetime])}</span> --></li>
                     {/loop}
                 </ul>
             {/pc}
         </div>
         <div class="tab-pane fade" id="forum">
-            {pc:content action="lists" catid="11" order="listorder DESC" num="4" return="data"}
+            {pc:content action="lists" catid="11" order="listorder DESC" num="8" return="data"}
                 <ul>
                     {loop $data $r}
-                        <li>&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a><span class="time">{date('Y-m-d', $r[updatetime])}</span></li>
+                        <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="{$r[url]}">{str_cut($r[title], '70', '...')}</a> <!-- <span class="time">{date('Y-m-d', $r[updatetime])}</span> --></li>
                     {/loop}
                 </ul>
             {/pc}
         </div>
     </div>
+</div>
+<div class="container">
+    <hr class="layui-bg-blue">
+</div>
+<div class="container hospital-team">
+<div class="layui-carousel" id="active2" lay-filter="active2">
+    <div carousel-item="">
+        <div class="active-team">
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/1.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/4.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/5.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/6.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="active-team">
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/8.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/9.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/10.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/11.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/12.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 {template "content", "footer"}

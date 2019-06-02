@@ -64,3 +64,7 @@
 <?php exit;?>05-30 09:33:57 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>05-30 10:04:35 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>05-30 10:04:35 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-02 07:57:30 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-02 07:57:37 | 2 | fsockopen(): unable to connect to tool.phpcms.cn:80 (������ӷ���һ��ʱ���û���ȷ�𸴻�ӵ����û�з�Ӧ�����ӳ���ʧ�ܡ�
+) | phpcms\libs\classes\http.class.php | 84
