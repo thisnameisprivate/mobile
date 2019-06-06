@@ -2,16 +2,16 @@
 <div class="container layui-carousel" id="active1" lay-filter="active2" style="max-width:600px;">
     <div carousel-item="">
         <div>
-            条目1
+            <img src="http://www.gyxhyy.com//statics/simple/images/news1.jpg" alt="">
         </div>
         <div>
-            条目2
+            <img src="http://www.gyxhyy.com/statics/simple/images/news2.jpg" alt="">
         </div>
         <div>
-            条目3
+            <img src="http://www.gyxhyy.com/statics/simple/images/news3.jpg" alt="">
         </div>
         <div>
-            条目4
+            <img src="http://www.gyxhyy.com/statics/simple/images/news4.jpg" alt="">
         </div>
         <div>
             条目5

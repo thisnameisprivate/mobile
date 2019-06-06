@@ -1,4 +1,4 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content", "header"); ?>
 <div class="container">
     <hr class="layui-bg-blue">
 </div>
@@ -11,4 +11,4 @@
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </ul>
 </div>
-<?php include template("content","footer"); ?>
+<?php include template("content", "footer"); ?>
