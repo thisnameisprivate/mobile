@@ -2,7 +2,7 @@
 <div class="container layui-carousel" id="active1" lay-filter="active2" style="max-width:600px;">
     <div carousel-item="">
         <div>
-            <img src="http://www.gyxhyy.com//statics/simple/images/news1.jpg" alt="">
+            <img src="http://www.gyxhyy.com/statics/simple/images/news1.jpg" alt="">
         </div>
         <div>
             <img src="http://www.gyxhyy.com/statics/simple/images/news2.jpg" alt="">
@@ -13,12 +13,8 @@
         <div>
             <img src="http://www.gyxhyy.com/statics/simple/images/news4.jpg" alt="">
         </div>
-        <div>
-            条目5
-        </div>
     </div>
 </div>
-<!-- 选项卡面板 -->
 <div class="container" style="text-align:center;">
     <ul id="myTab" class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#bulletin" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-globe">院内新闻</span></a></li>

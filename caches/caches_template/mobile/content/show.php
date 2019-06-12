@@ -4,7 +4,7 @@
             <h3><?php echo $data[$_GET['id']]['keywords'];?></h3>
             <p>发布时间: <?php echo date('Y-m-d', $data[$_GET[id]][updatetime]);?></p>
             <hr class="layui-bg-blue">
-            <p>
+            <p class="show_content">
                 <?php echo $data[$_GET['id']]['content'];?>
             </p>
         </div>

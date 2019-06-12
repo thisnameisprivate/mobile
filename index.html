@@ -11,57 +11,68 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="">
 	<style type="text/css">
-		html,body{ padding-top:55px; width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; overflow-y:auto; }
-		*{ list-style:none; marign:0; padding:0;}
+		html,body{ padding-top:75px; width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; overflow-y:auto; }
+		*{ list-style:none; margin:0; padding:0;}
 		a{ text-decoration: none; }
+		.blockTextLink{ text-align:left; }
+		.active-team{ width:100%; }
+		.active-team div{ float:left; width:18%; margin:0 auto; margin-left:1.5%; height:65%; margin-top:10px; border-radius:5px; max-width:80px; }
+		.active-team div img{ width:100%; height:100%; }
+		.hospital-team{ height:10vh; }
 	</style>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
-		<li role="resentaion" class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				<span class="caret glyphicon glyphicon-align-justify"></span>
-			</a>
-			<ul class="dropdown-menu">
-															<li>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://localhost/iphone/"><span class="glyphicon glyphicon-home">&nbsp;</span>广元协和医院</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+																		<li>
 							<a href="http://localhost/iphone/index.php?m=content&c=index&a=lists&catid=9">院内新闻</a>
 						</li>
-											<li>
+												<li>
 							<a href="http://localhost/iphone/index.php?m=content&c=index&a=lists&catid=10">媒体聚焦</a>
 						</li>
-											<li>
+												<li>
 							<a href="http://localhost/iphone/index.php?m=content&c=index&a=lists&catid=11">本院公告</a>
 						</li>
-											<li>
+												<li>
 							<a href="http://localhost/iphone/index.php?m=content&c=index&a=lists&catid=12">医院概况</a>
 						</li>
-											<li>
+												<li>
 							<a href="http://localhost/iphone/index.php?m=content&c=index&a=lists&catid=13">医生简介</a>
 						</li>
-												</ul>
-		</li>
+																	</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
 </nav><div class="container layui-carousel" id="active1" lay-filter="active2" style="max-width:600px;">
     <div carousel-item="">
         <div>
-            条目1
+            <img src="http://www.gyxhyy.com/statics/simple/images/news1.jpg" alt="">
         </div>
         <div>
-            条目2
+            <img src="http://www.gyxhyy.com/statics/simple/images/news2.jpg" alt="">
         </div>
         <div>
-            条目3
+            <img src="http://www.gyxhyy.com/statics/simple/images/news3.jpg" alt="">
         </div>
         <div>
-            条目4
-        </div>
-        <div>
-            条目5
+            <img src="http://www.gyxhyy.com/statics/simple/images/news4.jpg" alt="">
         </div>
     </div>
 </div>
-<!-- 选项卡面板 -->
 <div class="container" style="text-align:center;">
     <ul id="myTab" class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#bulletin" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-globe">院内新闻</span></a></li>
@@ -71,22 +82,109 @@
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in active" id="bulletin">
                             <ul>
-                                            <li><span class="glyphicon glyphicon-hand-right"></span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a><span class="time">2019-06-02</span></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
                                     </ul>
                     </div>
         <div class="tab-pane fade" id="rule">
                             <ul>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=10&id=37">测试信息</a> <!-- <span class="time">2019-06-12</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
                                     </ul>
                     </div>
         <div class="tab-pane fade" id="forum">
                             <ul>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
+                                            <li class="blockTextLink">&nbsp;<span class="glyphicon glyphicon-hand-right">&nbsp;</span><a href="http://localhost/iphone/index.php?m=content&c=index&a=show&catid=9&id=1">Popcorn Revulotion</a> <!-- <span class="time">2019-06-02</span> --></li>
                                     </ul>
                     </div>
     </div>
 </div>
-<div style="color:red;">
-    This is footer font .
+<div class="container">
+    <hr class="layui-bg-blue">
 </div>
+<div class="container hospital-team">
+<div class="layui-carousel" id="active2" lay-filter="active2">
+    <div carousel-item="">
+        <div class="active-team">
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/1.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/4.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/5.gif" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/6.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="active-team">
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/8.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/9.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/10.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/11.jpg" alt="">
+            </div>
+            <div>
+                <img src="http://www.gyxhyy.com/statics/simple/images/12.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <hr class="layui-bg-blue">
+</div>
+<div class="container footer">
+    <p>友情链接</p>
+    <p>
+        <a href="#">广元协和医院男科</a>
+        <a href="#">广元协和医院妇科</a>
+    </p>
+</div>
+<div class="container">
+    <hr class="layui-bg-blue">
+</div>
+
+<div class="container">
+    <div class="foot_info">
+        <p style="font-size:13px; text-align:center; ">Copyright © 2019 Guangyuan Union Hospital. 广元协和医院 版权所有</p>
+        <p style="font-size:13px; text-align:center; ">医院地址:广元市利州区东坝电子路中段56号  邮编:628040</p>
+        <p style="font-size:13px; text-align:center; ">咨询热线:0839-5513677  传真:0839-5513677  email:service@gyxhyy.com</p>
+        <p style="font-size:13px; text-align:center; ">前置批号:川卫网审[2016-096]号  ICP备案号:蜀ICP备10035726号-1</p>
+        <p style="font-size:13px; text-align:center; "><img style="position:absolute;margin-left:15%;" src="http://app.gyxhyy.com/statics/images/ban.png" />川公网安备 51080202000181号</p>
+    </div>
+</div>
+
 <script src="http://localhost/iphone//statics/mobile/layui/layui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
@@ -101,6 +199,15 @@
             interval: 2500,
             anim: 'updown',
             width: '100%',
+        });
+        carousel.render({
+            elem:'#active2',
+            arrow:'arrow',
+            indicator:'none',
+            interval: 2800,
+            anim:'fade',
+            width: '100%',
+            height: '100%'
         });
     })
 </script>

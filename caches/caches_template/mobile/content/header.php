@@ -19,6 +19,7 @@
 		.active-team div{ float:left; width:18%; margin:0 auto; margin-left:1.5%; height:65%; margin-top:10px; border-radius:5px; max-width:80px; }
 		.active-team div img{ width:100%; height:100%; }
 		.hospital-team{ height:10vh; }
+		.show_content img{ width:100%; }
 	</style>
 </head>
 <body>
